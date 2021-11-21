@@ -271,7 +271,7 @@ header ul li{
 
 /* The code for responsiveness starts here */
 
-@media only screen and (max-width: 479px) {
+@media only screen and (max-width: 475px) {
     body{
         font-family: 'Barlow', sans-serif;
         font-family: 'Fraunces', serif;
@@ -279,23 +279,23 @@ header ul li{
         width: 100%;
     } 
 }
-@media only screen and (max-width: 479px) {
+@media only screen and (max-width: 475px) {
     header{
         padding: 20px 10px 0px;
         background-image: url(./images/desktop/image-header.jpg);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        min-height: 90vh;
+        min-height: 70vh;
     }
 }
-@media only screen and (max-width: 479px) {
+@media only screen and (max-width: 475px) {
     #logo img {
         width: 60%;
         height: auto;
     }
 }
-@media only screen and (max-width: 479px) {
+@media only screen and (max-width: 475px) {
     #flex-head{
         display: flex;
         justify-content: space-between;
@@ -304,7 +304,7 @@ header ul li{
         font-size: .8rem;
     }
 }
-@media only screen and (max-width: 479px) {
+@media only screen and (max-width: 475px) {
     header h1{
         text-transform: uppercase;
         color: white;
@@ -315,22 +315,29 @@ header ul li{
         font-size: 2rem;
     }
 }
-@media only screen and (max-width: 479px) {
+@media only screen and (max-width: 475px) {
     .arrow-down{
         position: absolute;
-        top: 55%;
+        top: 45%;
         left: 48%;
         width: 40%;
         height: 45%;
     }
 }
-@media only screen and (max-width: 479px) {
+@media only screen and (max-width: 475px) {
     .half{
+        display: flex;
+        flex-direction: column;
         flex: 100%;
         max-width: 100%;
         max-height: auto;
+        order: 1;
     }
-    .flextextimg h2{
+   .half.egg {
+     order: 0;
+     height: 100%;
+   }
+      h2{
         font-size: 30px;
         font-weight: 1200;
         text-align: center;
@@ -343,5 +350,55 @@ header ul li{
         padding: 100px 85px 90px 90px;
         text-align: center;
         width: 100%;
+    }
+}
+
+@media only screen and (max-width: 475px) {
+    .half.graphic{
+        background-image: url(./images/desktop/image-graphic-design.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: hsl(165, 33%, 7%);
+        padding: 50px 85px 50px 85px;
+        text-align: center;
+        
+    }
+    .half.photo{
+        background-image: url(./images/desktop/image-photography.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: hsl(0, 0%, 0%);
+        padding: 50px 85px 50px 85px;
+        text-align: center;
+    } 
+}
+@media only screen and (max-width: 475px) {
+    main{
+        padding: 70px 30px;
+    }
+    
+    main > h2{
+        text-transform: uppercase;
+        width: 400px;
+        font-size: 1.4rem;
+        color: hsl(232, 10%, 55%);
+        padding-right: 40px;
+        text-align: center;
+    }   
+}
+@media only screen and (max-width: 475px) {
+    .pics{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+    }
+    .picflex{
+        flex: 50%;
+        max-width: 50%;
     }
 }
