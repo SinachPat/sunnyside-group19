@@ -54,7 +54,7 @@ header h1{
 .arrow-down{
     position: absolute;
     top: 40%;
-    left: 40%;
+    left: 50%;
 }
 .flextextimg{
     display: flex;
