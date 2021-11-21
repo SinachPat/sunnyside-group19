@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Barlow', sans-serif;
+    font-family: 'Fraunces', serif;
+    font-size: 18px;
+}
+header{
+    padding: 20px 10px 0px;
+    background-image: url(./images/desktop/image-header.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 90vh;
+}
+#flex-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px 20px 15px;
+}
+header ul li{
+    display: inline;
+    padding: 15px 30px;
+    font-family: 'Barlow', sans-serif;
+    color: white;
+    list-style-type: none;
+}
+
+#contact{
+    background-color: white;
+    font-family: 'Fraunces', serif;
+    text-transform: uppercase;
+    color: hsl(208, 16%, 21%);
+    border-radius: 30px;
+    margin-left: 20px;
+}
+
+header h1{
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    margin-top: 110px;
+    letter-spacing: 8px;
+    font-weight: 900;
+    font-size: 55px;
+}
+.arrow-down{
+    position: absolute;
+    top: 40%;
+    left: 40%;
+}
+.flextextimg{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.half{
+    flex: 50%;
+    max-width: 50%;
+    max-height: 50%;
+}
+
+.flextextimg h2{
+    font-size: 30px;
+    color: hsl(212, 27%, 19%);
+    margin-bottom: 40px;
+    margin-right: 100px;
+}
+
+.transform{
+    padding: 170px 120px 170px 170px;
+}
+
+.stand{
+    padding: 170px 170px 170px 120px;
+}
+
+.transform p, .stand p{
+    font-family: 'Barlow', sans-serif;
+    line-height: 1.85;
+    color: hsl(213, 9%, 39%);
+}
+
+.learns{
+    text-transform: uppercase;
+    margin-top: 50px;
+    text-decoration: 7px hsla(7, 99%, 70%, 0.5) underline;
+}
+
+.learnt{
+    text-transform: uppercase;
+    margin-top: 50px;
+    text-decoration: 7px hsl(51, 100%, 49%,0.5) underline;
+}
+
+img.fit{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.graphic{
+    background-image: url(./images/desktop/image-graphic-design.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: hsl(167, 40%, 24%);
+    padding: 70px 165px;
+    text-align: center;
+    
+}
+
+.flextextimg h3{
+    margin-top: 330px;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+    font-weight: 900;
+    font-size: 25px;
+}
+
+.graphic p, .photo p{
+    font-family: 'Barlow', sans-serif;
+    opacity: 0.8;
+    line-height: 1.85;
+}
+
+.photo{
+    background-image: url(./images/desktop/image-photography.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: hsl(198, 62%, 26%);
+    padding: 70px 165px;
+    text-align: center;
+}
+
+main{
+    padding: 200px 70px;
+}
+
+main h2{
+    text-transform: uppercase;
+    color: hsl(232, 10%, 55%);
+    letter-spacing: 8px;
+    text-align: center;
+    margin-bottom: 90px;
+}
+
+.peopleflex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.people{
+    padding: 30px 40px;
+    flex: 33%;
+}
+
+main img{
+    border-radius: 120px;
+    width: 120px;
+    height: 120px;
+    margin-bottom: 70px;
+}
+
+.para{
+    margin-bottom: 60px;
+    color: hsl(213, 9%, 39%);
+    font-family: 'Barlow', sans-serif;
+}
+
+.name{
+    margin-bottom: 15px;
+}
+
+.post{
+    color: hsl(232, 10%, 55%);
+    font-family: 'Barlow', sans-serif;
+    font-size: 15px;
+}
+
+.pics{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.picflex{
+    flex: 25%;
+    max-width: 25%;
+}
+
+footer{
+    background-color: #90D4C5;
+    color: hsl(168, 34%, 41%);
+    font-family: 'Barlow', sans-serif;
+    padding: 70px;
+}
+
+.flex-logo{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    margin-bottom: 50px;
+}
+
+footer ul li{
+    padding: 0px 40px;
+}
+
+.flex-social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-social img{
+    padding: 0px 20px;
+}
+
+/* HOVER */
+
+a{
+    text-decoration: none;
+}
+
+footer li a:visited{
+    color: hsl(168, 34%, 41%);
+}
+
+footer li a:hover{
+    color: white;
+}
+
+.learns:hover{
+    text-decoration: 7px rgb(241, 46, 20) underline;
+    cursor: pointer;
+}
+
+.learnt:hover{
+    text-decoration: 7px hsl(51, 100%, 49%) underline;
+    cursor: pointer;
+}
+
+#contact:hover{
+    color: white;
+    background-color: #6FCFFF;
+}
+
+header ul li{
+    cursor: pointer;
+}
+
+/* The code for responsiveness starts here */
+
+@media only screen and (max-width: 479px) {
+    body{
+        font-family: 'Barlow', sans-serif;
+        font-family: 'Fraunces', serif;
+        font-size: .8rem;
+        width: 100%;
+    } 
+}
+@media only screen and (max-width: 479px) {
+    header{
+        padding: 20px 10px 0px;
+        background-image: url(./images/desktop/image-header.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        min-height: 90vh;
+    }
+}
+@media only screen and (max-width: 479px) {
+    #logo img {
+        width: 60%;
+        height: auto;
+    }
+}
+@media only screen and (max-width: 479px) {
+    #flex-head{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 30px 20px 15px;
+        font-size: .8rem;
+    }
+}
+@media only screen and (max-width: 479px) {
+    header h1{
+        text-transform: uppercase;
+        color: white;
+        text-align: center;
+        margin-top: 110px;
+        letter-spacing: 8px;
+        font-weight: 1000;
+        font-size: 3rem;
+    }
+}
+@media only screen and (max-width: 479px) {
+    .arrow-down{
+        position: absolute;
+        top: 55%;
+        left: 48%;
+        width: 40%;
+        height: 45%;
+    }
+}
+@media only screen and (max-width: 479px) {
+    .half{
+        flex: 100%;
+        max-width: 100%;
+        max-height: auto;
+    }
+    .flextextimg h2{
+        font-size: 30px;
+        font-weight: 1200;
+        text-align: center;
+        color: hsl(212, 27%, 19%);
+        margin: 0px 0px 15px 5px;
+        width: 100%;
+
+    }
+    .transform, .stand{
+        padding: 100px 85px 90px 90px;
+        text-align: center;
+        width: 100%;
+    }
+}
