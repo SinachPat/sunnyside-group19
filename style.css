@@ -10,34 +10,48 @@ body{
     font-family: 'Barlow', sans-serif;
     font-family: 'Fraunces', serif;
     font-size: 18px;
+    padding: 0;
+    margin: 0;
 }
+
+.container{
+    overflow-x: hidden;
+}
+
 header{
-    padding: 20px 10px 0px;
+    padding: 30px 10px 0px;
     background-image: url(./images/desktop/image-header.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     min-height: 90vh;
 }
+
 #flex-head{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 30px 20px 15px;
 }
-header ul li{
-    display: inline;
-    padding: 15px 30px;
+
+.dropdown{
+    display: none;
+}
+
+nav{
     font-family: 'Barlow', sans-serif;
     color: white;
-    list-style-type: none;
+}
+
+nav a{
+    padding: 15px 30px;
 }
 
 #contact{
     background-color: white;
     font-family: 'Fraunces', serif;
     text-transform: uppercase;
-    color: hsl(208, 16%, 21%);
+    color: hsl(212, 27%, 19%);
     border-radius: 30px;
     margin-left: 20px;
 }
@@ -46,16 +60,18 @@ header h1{
     text-transform: uppercase;
     color: white;
     text-align: center;
-    margin-top: 110px;
+    margin-top: 100px;
     letter-spacing: 8px;
     font-weight: 900;
     font-size: 55px;
 }
+
 .arrow-down{
-    position: absolute;
-    top: 40%;
+    position: relative;
     left: 50%;
+    margin-top: 75px;
 }
+
 .flextextimg{
     display: flex;
     flex-wrap: wrap;
@@ -68,18 +84,17 @@ header h1{
 }
 
 .flextextimg h2{
-    font-size: 30px;
+    font-size: 40px;
     color: hsl(212, 27%, 19%);
-    margin-bottom: 40px;
-    margin-right: 100px;
+    margin-bottom: 35px;
 }
 
 .transform{
-    padding: 170px 120px 170px 170px;
+    margin: 100px 120px 100px 150px;
 }
 
 .stand{
-    padding: 170px 170px 170px 120px;
+    margin: 100px 150px 100px 120px;
 }
 
 .transform p, .stand p{
@@ -111,18 +126,23 @@ img.fit{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    color: hsl(167, 40%, 24%);
-    padding: 70px 165px;
-    text-align: center;
-    
+    color: hsl(167, 40%, 24%);   
 }
 
-.flextextimg h3{
-    margin-top: 330px;
+.headpara{
+    text-align: center;
+    margin: 400px 165px 70px;
+}
+
+.headpara h3{
     margin-bottom: 30px;
     text-transform: capitalize;
     font-weight: 900;
     font-size: 25px;
+}
+
+.transform h3, .stand h3{
+    font-size: 18px;
 }
 
 .graphic p, .photo p{
@@ -137,20 +157,18 @@ img.fit{
     background-repeat: no-repeat;
     background-size: cover;
     color: hsl(198, 62%, 26%);
-    padding: 70px 165px;
-    text-align: center;
 }
 
-main{
-    padding: 200px 70px;
+#main{
+    margin: 150px 70px;
 }
 
-main h2{
+#main h2{
     text-transform: uppercase;
-    color: hsl(232, 10%, 55%);
+    color: hsla(232, 10%, 55%,0.7);
     letter-spacing: 8px;
     text-align: center;
-    margin-bottom: 90px;
+    margin-bottom: 70px;
 }
 
 .peopleflex{
@@ -159,7 +177,6 @@ main h2{
     justify-content: center;
     text-align: center;
     flex-wrap: wrap;
-    align-content: center;
 }
 
 .people{
@@ -167,17 +184,18 @@ main h2{
     flex: 33%;
 }
 
-main img{
-    border-radius: 120px;
-    width: 120px;
-    height: 120px;
-    margin-bottom: 70px;
+#main img{
+    border-radius: 100px;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 60px;
 }
 
 .para{
     margin-bottom: 60px;
     color: hsl(213, 9%, 39%);
     font-family: 'Barlow', sans-serif;
+    line-height: 1.7;
 }
 
 .name{
@@ -205,6 +223,9 @@ footer{
     background-color: #90D4C5;
     color: hsl(168, 34%, 41%);
     font-family: 'Barlow', sans-serif;
+}
+
+.foot{
     padding: 70px;
 }
 
@@ -214,15 +235,16 @@ footer{
     margin-bottom: 40px;
 }
 
-footer ul {
+.foot ul {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     list-style-type: none;
-    margin-bottom: 50px;
+    margin-bottom: 75px;
 }
 
-footer ul li{
+.foot ul li{
     padding: 0px 40px;
 }
 
@@ -232,8 +254,8 @@ footer ul li{
     align-items: center;
 }
 
-.flex-social img{
-    padding: 0px 20px;
+.flex-social a{
+    margin: 0px 20px;
 }
 
 /* HOVER */
@@ -242,16 +264,13 @@ a{
     text-decoration: none;
 }
 
-footer li a:visited{
-    color: hsl(168, 34%, 41%);
-}
-
-footer li a:hover{
+footer li:hover{
     color: white;
+    cursor: pointer;
 }
 
 .learns:hover{
-    text-decoration: 7px rgb(241, 46, 20) underline;
+    text-decoration: 7px hsla(7, 99%, 70%) underline;
     cursor: pointer;
 }
 
@@ -265,140 +284,540 @@ footer li a:hover{
     background-color: #6FCFFF;
 }
 
-header ul li{
+nav{
     cursor: pointer;
 }
 
-/* The code for responsiveness starts here */
+.fillgreen:hover{
+    fill: white;
+}
 
-@media only screen and (max-width: 475px) {
+@media screen and (max-width: 350px) {
+
     body{
-        font-family: 'Barlow', sans-serif;
-        font-family: 'Fraunces', serif;
-        font-size: .8rem;
-        width: 100%;
-    } 
-}
-@media only screen and (max-width: 475px) {
-    header{
-        padding: 20px 10px 0px;
-        background-image: url(./images/desktop/image-header.jpg);
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        min-height: 70vh;
-    }
-}
-@media only screen and (max-width: 475px) {
-    #logo img {
-        width: 60%;
-        height: auto;
-    }
-}
-@media only screen and (max-width: 475px) {
-    #flex-head{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 20px 30px 20px 15px;
-        font-size: .8rem;
-    }
-}
-@media only screen and (max-width: 475px) {
-    header h1{
-        text-transform: uppercase;
-        color: white;
-        text-align: center;
-        margin-top: 110px;
-        letter-spacing: 8px;
-        font-weight: 1000;
-        font-size: 2rem;
-    }
-}
-@media only screen and (max-width: 475px) {
-    .arrow-down{
-        position: absolute;
-        top: 45%;
-        left: 48%;
-        width: 40%;
-        height: 45%;
-    }
-}
-@media only screen and (max-width: 475px) {
-    .half{
-        display: flex;
-        flex-direction: column;
-        flex: 100%;
-        max-width: 100%;
-        max-height: auto;
-        order: 1;
-    }
-   .half.egg {
-     order: 0;
-     height: 100%;
-   }
-      h2{
-        font-size: 30px;
-        font-weight: 1200;
-        text-align: center;
-        color: hsl(212, 27%, 19%);
-        margin: 0px 0px 15px 5px;
-        width: 100%;
-
-    }
-    .transform, .stand{
-        padding: 100px 85px 90px 90px;
-        text-align: center;
-        width: 100%;
-    }
-}
-
-@media only screen and (max-width: 475px) {
-    .half.graphic{
-        background-image: url(./images/desktop/image-graphic-design.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        color: hsl(165, 33%, 7%);
-        padding: 50px 85px 50px 85px;
-        text-align: center;
-        
-    }
-    .half.photo{
-        background-image: url(./images/desktop/image-photography.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        color: hsl(0, 0%, 0%);
-        padding: 50px 85px 50px 85px;
-        text-align: center;
-    } 
-}
-@media only screen and (max-width: 475px) {
-    main{
-        padding: 70px 30px;
+        overflow-wrap: break-word;
     }
     
-    main > h2{
-        text-transform: uppercase;
-        width: 400px;
-        font-size: 1.4rem;
-        color: hsl(232, 10%, 55%);
-        padding-right: 40px;
-        text-align: center;
-    }   
-}
-@media only screen and (max-width: 475px) {
-    .pics{
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        height: auto;
+    header{
+        padding: 40px 20px 0px;
     }
+
+    #flex-head{
+        display: inline;
+        align-items: center;
+        padding: 0px;
+    }
+
+    .dropdown{
+        position: relative;
+        float: right;
+        display: inline;
+        align-self: center;
+    }
+
+    .menu {
+        cursor: pointer;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: white;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        right: 0;
+        text-align: center;
+        padding: 20px 20px 30px;
+        font-size: 16px;
+    }
+
+    .dropdown-content a {
+        color: hsl(210, 4%, 67%);
+        padding: 12px 18px;
+        text-decoration: none;
+        display: block;
+        font-family: 'Barlow', sans-serif;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .menus:hover{
+        fill: #6FCFFF;
+    }
+
+    #contact-menu{
+        background-color: hsl(51, 100%, 49%);
+        font-family: 'Fraunces', serif;
+        text-transform: uppercase;
+        color: hsl(212, 27%, 19%);
+        border-radius: 30px;
+        font-size: 12px;
+        margin-top: 15px;
+    }
+
+    nav{
+        display: none;
+    }
+
+    header h1{
+        margin-top: 50px;
+        letter-spacing: 5px;
+        font-size: 30px;
+    }
+
+    .arrow-down{
+        position: relative;
+        left: 50%;
+        margin-top: 40px;
+    }
+
+    .flextextimg{
+        flex-direction: column;
+    }
+
+    .half{
+        flex: 100%;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .flextextimg h2{
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+
+    .transform, .stand{
+        margin: 40px 10px 50px;
+        text-align: center;
+    }
+
+    .transform p, .stand p{
+        line-height: 1.5;
+        font-size: 16px;
+    }
+
+    .learns, .learnt{
+        margin-top: 30px;
+    }
+
+    .headpara{
+        margin: 400px 10px 50px;
+        font-size: 16px;
+    }
+
+    .graphic p, .photo p{
+        opacity: 1;
+        line-height: 1.5;
+    }
+
+    #main{
+        margin: 50px 10px;
+    }
+
+    #main h2{
+        letter-spacing: 4px;
+        margin-bottom: 30px;
+        font-size: 16px;
+    }
+
+    .peopleflex{
+        flex-direction: column;
+    }
+
+    .people{
+        padding: 30px 1px;
+        flex: 100%;
+    }
+
+    #main img{
+        border-radius: 50px;
+        width: 50px;
+        height: 50px;
+        margin-bottom: 20px;
+    }
+
+    .para{
+        margin-bottom: 25px;
+        font-size: 16px;
+    }
+
+    .pics{
+        flex-wrap: wrap;
+    }
+
     .picflex{
         flex: 50%;
         max-width: 50%;
+    }
+
+    .foot{
+        padding: 40px 0px 50px;
+    }
+
+    .flex-logo{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+
+    .foot ul {
+        margin-bottom: 50px;
+    }
+
+    .foot ul li{
+        padding: 5px 10px;
+    }
+
+    .flex-social{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .flex-social a{
+        margin: 0px 4px;
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width: 530px){
+
+    header{
+        padding: 40px 30px 0px;
+    }
+
+    #flex-head{
+        display: inline;
+        align-items: center;
+        padding: 0px;
+    }
+
+    .dropdown{
+        position: relative;
+        float: right;
+        display: inline;
+        align-self: center;
+    }
+
+    .menu {
+        cursor: pointer;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: white;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        right: 0;
+        text-align: center;
+        padding: 20px 40px 30px;
+        font-size: 16px;
+    }
+
+    .dropdown-content a {
+        color: hsl(210, 4%, 67%);
+        padding: 12px 22px;
+        text-decoration: none;
+        display: block;
+        font-family: 'Barlow', sans-serif;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .menus:hover{
+        fill: #6FCFFF;
+    }
+
+    #contact-menu{
+        background-color: hsl(51, 100%, 49%);
+        font-family: 'Fraunces', serif;
+        text-transform: uppercase;
+        color: hsl(212, 27%, 19%);
+        border-radius: 30px;
+        font-size: 12px;
+        margin-top: 15px;
+    }
+
+    nav{
+        display: none;
+    }
+
+    header h1{
+        margin-top: 70px;
+        letter-spacing: 5px;
+        font-size: 40px;
+    }
+
+    .arrow-down{
+        position: relative;
+        left: 50%;
+        margin-top: 40px;
+    }
+
+    .flextextimg{
+        flex-direction: column;
+    }
+
+    .half{
+        flex: 100%;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .flextextimg h2{
+        font-size: 33px;
+        margin-bottom: 25px;
+    }
+
+    .transform, .stand{
+        margin: 50px 20px 60px;
+        text-align: center;
+    }
+
+    .transform p, .stand p{
+        line-height: 1.75;
+    }
+
+    .learns, .learnt{
+        margin-top: 30px;
+    }
+
+    .headpara{
+        margin: 400px 20px 70px;
+        font-size: 16px;
+    }
+
+    .graphic p, .photo p{
+        opacity: 1;
+        line-height: 1.5;
+    }
+
+    #main{
+        margin: 70px 20px;
+    }
+
+    #main h2{
+        letter-spacing: 5px;
+        margin-bottom: 30px;
+        font-size: 17px;
+    }
+
+    .peopleflex{
+        flex-direction: column;
+    }
+
+    .people{
+        padding: 30px 1px;
+        flex: 100%;
+    }
+
+    #main img{
+        border-radius: 70px;
+        width: 70px;
+        height: 70px;
+        margin-bottom: 30px;
+    }
+
+    .para{
+        margin-bottom: 35px;
+    }
+
+    .pics{
+        flex-wrap: wrap;
+    }
+
+    .picflex{
+        flex: 50%;
+        max-width: 50%;
+    }
+
+    .foot{
+        padding: 60px 0px 70px;
+    }
+
+    .flex-logo{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+
+    .foot ul {
+        margin-bottom: 70px;
+    }
+
+    .foot ul li{
+        padding: 10px 25px;
+    }
+
+    .flex-social{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .flex-social a{
+        margin: 0px 8px;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    header h1{
+        margin-top: 70px;
+        letter-spacing: 5px;
+        font-size: 45px;
+    }
+
+    .dropdown{
+        position: relative;
+        float: right;
+        display: inline;
+        align-self: center;
+    }
+
+    .menu {
+        cursor: pointer;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: white;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        right: 0;
+        text-align: center;
+        padding: 20px 40px 30px;
+        font-size: 16px;
+    }
+
+    .dropdown-content a {
+        color: hsl(210, 4%, 67%);
+        padding: 12px 22px;
+        text-decoration: none;
+        display: block;
+        font-family: 'Barlow', sans-serif;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .menus:hover{
+        fill: #6FCFFF;
+    }
+
+    #contact-menu{
+        background-color: hsl(51, 100%, 49%);
+        font-family: 'Fraunces', serif;
+        text-transform: uppercase;
+        color: hsl(212, 27%, 19%);
+        border-radius: 30px;
+        font-size: 12px;
+        margin-top: 15px;
+    }
+
+    nav{
+        display: none;
+    }
+    
+    .flextextimg h2{
+        font-size: 33px;
+        margin-bottom: 25px;
+    }
+    
+    .transform, .stand{
+        margin: 50px 20px 60px;
+        text-align: center;
+    }
+
+    .transform p, .stand p{
+        line-height: 1.75;
+    }
+
+    .learns, .learnt{
+        margin-top: 30px;
+    }
+
+    .headpara{
+        margin: 400px 20px 70px;
+    }
+
+    .graphic p, .photo p{
+        opacity: 1;
+        line-height: 1.5;
+    }
+
+    #main{
+        margin: 70px 20px;
+    }
+
+    #main h2{
+        letter-spacing: 5px;
+        margin-bottom: 30px;
+        font-size: 23px;
+    }
+
+    .peopleflex{
+        flex-direction: column;
+    }
+
+    .people{
+        padding: 30px 5px;
+    }
+
+    #main img{
+        border-radius: 80px;
+        width: 80px;
+        height: 80px;
+        margin-bottom: 30px;
+    }
+
+    .para{
+        margin-bottom: 35px;
+    }
+
+    .foot ul li{
+        padding: 10px 15px;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    
+    nav a{
+        padding: 10px;
+    }
+
+    .transform, .stand{
+        margin: 50px 50px 60px;
+        text-align: center;
+    }
+
+    .headpara{
+        margin: 400px 70px 70px;
+        font-size: 16px;
+    }
+
+    #main{
+        margin: 90px 20px;
+    }
+
+    .people{
+        padding: 30px 10px;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+
+    .transform, .stand{
+        margin: 25%;
     }
 }
