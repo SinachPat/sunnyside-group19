@@ -10,8 +10,6 @@ body{
     font-family: 'Barlow', sans-serif;
     font-family: 'Fraunces', serif;
     font-size: 18px;
-    padding: 0;
-    margin: 0;
 }
 
 .container{
@@ -383,6 +381,30 @@ nav{
         max-height: 100%;
     }
 
+    .egg{
+        order: 1;
+    }
+
+    .trans{
+        order: 2;
+    }
+
+    .cup{
+        order: 3;
+    }
+
+    .stan{
+        order: 4;
+    }
+
+    .graphic{
+        order: 5;
+    }
+
+    .photo{
+        order: 6;
+    }
+
     .flextextimg h2{
         font-size: 25px;
         margin-bottom: 20px;
@@ -568,6 +590,30 @@ nav{
         flex: 100%;
         max-width: 100%;
         max-height: 100%;
+    }
+
+    .egg{
+        order: 1;
+    }
+
+    .trans{
+        order: 2;
+    }
+
+    .cup{
+        order: 3;
+    }
+
+    .stan{
+        order: 4;
+    }
+
+    .graphic{
+        order: 5;
+    }
+
+    .photo{
+        order: 6;
     }
 
     .flextextimg h2{
